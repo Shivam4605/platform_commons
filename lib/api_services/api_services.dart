@@ -44,7 +44,7 @@ class ApiServices {
   //Get Movies Data
   Future<List<dynamic>> getMovies(int page) async {
     final url = Uri.parse(
-      "https://api.themoviedb.org/3/trending/movie/day?api_key=reqres_e774a0c7f7304c8dada64174eec14af1&page=$page",
+      "https://api.themoviedb.org/3/trending/movie/day?api_key=YOUR_API_KEY&page=$page",
     );
 
     final response = await http.get(url);
